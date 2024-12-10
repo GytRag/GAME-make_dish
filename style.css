@@ -1,0 +1,77 @@
+
+.gamePlay {
+    max-width: 700px;
+    min-height: 400px;
+}
+.gameBoard {
+    width: 100%;
+}
+
+.order, .ingredients {
+    flex: 1;
+}
+
+
+.scoreBoard {
+    display: none;
+    max-width: 700px;
+}
+
+.saveBtn {
+    display: none;
+}
+
+
+/*-----------Order-------------*/
+.orederName {
+    font-size: 40px;
+}
+
+.orderIngredients {
+    font-size: 40px;
+}
+
+
+
+/*---------Ingredients---------*/
+.ingred {
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.ingred:hover {
+    background-color: #fafafa;
+    scale: 1.2;
+}
+
+.orderIngredients div {
+    opacity: 0.25;
+}
+
+.green {
+    opacity: 1 !important;
+    background-color: #ebffeb;
+}
+
+
+/*loader*/
+.loader {
+    width: 16px;
+    height: 16px;
+    border: 3px solid #3996f3;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
