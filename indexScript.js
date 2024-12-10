@@ -73,9 +73,14 @@ saveBtn.onclick = () => {
 };
 // load game
 loadBtn.onclick = () => {
-    //@ts-ignore
-    gameStat = JSON.parse(localStorage.getItem('kitchenStat'));
-    letTheGameBegin();
+    if (localStorage.getItem('kitchenStat') !== null) {
+        //@ts-ignore
+        gameStat = JSON.parse(localStorage.getItem('kitchenStat'));
+        letTheGameBegin();
+    }
+    else {
+        letTheGameBegin();
+    }
 };
 // game start
 startBtn.onclick = () => {
